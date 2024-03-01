@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Leanne Graham Updated New",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031"
+    },
+    {
+      "id": "2",
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031"
+    },
+    {
+      "id": "4",
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031"
+    },
+    {
+      "id": "46ab",
+      "name": "Sohan Kotni",
+      "email": "kotnisohan09@gmail.com",
+      "phone": "9040328628"
+    },
+    {
+      "id": "a4d5",
+      "name": "Sohan",
+      "email": "kotnisohan09@gmail.com",
+      "phone": "7788041111"
+    },
+    {
+      "id": "a7b4",
+      "name": "Sravan",
+      "email": "sravan@mail.com",
+      "phone": "903045908"
+    },
+    {
+      "id": "99c1",
+      "name": "Kotni ",
+      "email": "Kotni@gmail.com",
+      "phone": "90404678987"
+    }
+  ]
+}
