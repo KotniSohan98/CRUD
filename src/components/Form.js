@@ -16,7 +16,8 @@ export const Form = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get("http://localhost:3001/users/" + id)
+        // .get("http://localhost:3001/users/" + id)
+        .get("https://crud-api-92aj.onrender.com/users/" + id)
         .then((res) => setValues(res.data))
         .catch((err) => console.log(err));
     }
@@ -27,7 +28,8 @@ export const Form = () => {
     // console.log("Submitted");
     // console.log(values);
     axios
-      .post("http://localhost:3001/users", values)
+      // .post("http://localhost:3001/users", values)
+      .post("https://crud-api-92aj.onrender.com/users", values)
       .then((res) => {
         console.log(res.data);
         navigate("/list");
@@ -40,7 +42,8 @@ export const Form = () => {
     // console.log(values);
     console.log("HandleUpdate");
     axios
-      .put("http://localhost:3001/users/" + id, values)
+      // .put("http://localhost:3001/users/" + id, values)
+      .put("https://crud-api-92aj.onrender.com/users/" + id, values)
       .then((res) => {
         console.log(res.data);
         navigate("/list");

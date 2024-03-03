@@ -8,10 +8,13 @@ export const Detail = () => {
   const [data, setData] = useState([]);
   const { id } = useParams();
 
+  console.log(id);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/users/" + id)
+      // .get("http://localhost:3001/users/" + id)
+      .get("https://crud-api-92aj.onrender.com/users/" + id)
       .then((res) => setData(res.data))
+      .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }, [id]);
   return (

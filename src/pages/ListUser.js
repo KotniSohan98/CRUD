@@ -7,7 +7,8 @@ export const ListUser = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/users")
+      // .get("http://localhost:3001/users")
+      .get("https://crud-api-92aj.onrender.com/users")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -17,7 +18,8 @@ export const ListUser = () => {
     const confirm = window.confirm("Would You like to delete");
     if (confirm) {
       axios
-        .delete("http://localhost:3001/users/" + id)
+        // .delete("http://localhost:3001/users/" + id)
+        .delete("https://crud-api-92aj.onrender.com/users/" + id)
         .then((res) => {
           window.location.reload();
         })
